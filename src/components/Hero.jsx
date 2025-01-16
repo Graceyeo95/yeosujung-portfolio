@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { BeamLight } from './BeamLight';
 import { socialLinks } from '../data';
+import { staggerContainer, revealText } from '../utils/animation';
 
 const Hero = () => {
   return (
@@ -16,10 +17,25 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            안녕하세요, <span className=''>웹 개발자</span>
-          </h1>
-          <h1 className={`${styles.heroHeadText} text-blue`}>여수정입니다</h1>
+          <motion.div
+            initial='hidden'
+            whileInView='show'
+            variants={staggerContainer(0.4, 0.2)}
+            className='overflow-y-hidden'
+          >
+            <motion.h1
+              variants={revealText}
+              className={`${styles.heroHeadText} text-white`}
+            >
+              안녕하세요, <span className=''>웹 개발자</span>
+            </motion.h1>
+            <motion.h1
+              variants={revealText}
+              className={`${styles.heroHeadText} text-blue`}
+            >
+              여수정입니다
+            </motion.h1>
+          </motion.div>
           <p className={`${styles.heroSubText} mt-2 lg:max-w-[80%] text-white`}>
             사용자의 경험을 최우선으로 생각하며, 완성도 높은 UI와 코드를 위해
             끊임없이 노력하는 프론트엔드 개발자입니다. 새로운 도전을 통해 한

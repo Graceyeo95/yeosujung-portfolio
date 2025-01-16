@@ -56,6 +56,18 @@ export const slideIn = (direction, type, delay, duration) => {
   };
 };
 
+export const revealText = {
+  hidden: {
+    y: '100%',
+  },
+  show: {
+    y: 0,
+    transition: {
+      duration: 0.6,
+    },
+  },
+};
+
 export const staggerContainer = (staggerChildren, delayChildren) => {
   return {
     hidden: {},
