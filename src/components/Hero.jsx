@@ -29,7 +29,7 @@ const Hero = () => {
                 href={link.value}
                 key={`social-${link.title}`}
                 target='_blank'
-                className='border-2 text-[13px] lg:text-[16px] flex items-center gap-x-2 border-white rounded-full py-2 px-3 lg:px-6'
+                className='border-2 text-[13px] text-white lg:text-[16px] flex items-center gap-x-2 border-white rounded-full py-2 px-3 lg:px-6'
               >
                 {link.title}
                 <img
