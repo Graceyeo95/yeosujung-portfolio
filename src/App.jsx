@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar, Hero, Skill, Experience } from './components';
+import { Navbar, Hero, Skill, Experience, Contact } from './components';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Hero />
         <Skill />
         <Experience />
+        <Contact />
       </div>
     </BrowserRouter>
   );
