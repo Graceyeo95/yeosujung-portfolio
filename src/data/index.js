@@ -41,8 +41,8 @@ const socialLinks = [
 
 export const navLinks = [
   {
-    id: 'tech',
-    title: 'Tech',
+    id: 'skill',
+    title: 'Skill',
   },
   {
     id: 'work',
