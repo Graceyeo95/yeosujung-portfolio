@@ -11,3 +11,13 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+
+.blue-gradient {
+  background: #0f45db;
+  background: linear-gradient(-90deg, #0f45db 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #0f45db 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
