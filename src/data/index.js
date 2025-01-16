@@ -194,7 +194,7 @@ const experiences = [
     company_name: 'Brave creative agency',
     icon: brave,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'June 2023 - Dec 2024',
     points: [
       '기존 코드를 디버깅하고 성능 최적화를 위한 개선 작업을 수행했습니다.',
       '디자이너와 협력하여 UI/UX 요구 사항을 충족하는 사용자 친화적인 웹 페이지를 구현했습니다.',
