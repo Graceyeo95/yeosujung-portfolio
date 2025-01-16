@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
+import { BeamLight } from './BeamLight';
 import { socialLinks } from '../data';
 
 const Hero = () => {
   return (
     <section className='relative w-full h-screen lg:h-screen mx-auto'>
+      <BeamLight />
       <div
         className={`${styles.paddingX} absolute inset-0 top-1/2 -translate-y-1/2 max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >

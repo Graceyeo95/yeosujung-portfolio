@@ -4,5 +4,6 @@ import Skill from './Skill';
 import Experience from './Experience';
 import Project from './Project';
 import Contact from './Contact';
+import BeamLight from './BeamLight';
 
-export { Hero, Navbar, Skill, Experience, Project, Contact };
+export { Hero, Navbar, Skill, Experience, Project, Contact, BeamLight };
