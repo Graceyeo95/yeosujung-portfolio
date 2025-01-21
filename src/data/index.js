@@ -85,7 +85,6 @@ const technologies = [
     points: [
       'ES6+ 문법을 활용한 가독성 높은 코드 작성 경험.',
       '비동기 프로그래밍(Async/Await, Promise)을 이해하고 프로젝트에서 활용 가능.',
-      'DOM 조작 및 이벤트 처리를 통해 사용자 인터페이스 개발 경험.',
     ],
   },
   {
@@ -109,7 +108,6 @@ const technologies = [
     icon: redux,
     points: [
       'Flux 패턴의 전역 상태 관리 방식을 이해하고 Action 및 Dispatch의 생성을 프로젝트에 적용 가능.',
-      'Redux-Saga 등 미들웨어 라이브러리를 통한 비동기 처리에 대한 경험이 있음.',
     ],
   },
   {
