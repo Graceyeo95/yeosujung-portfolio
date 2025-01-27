@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { textVariant, fadeIn } from '../utils/animation';
 import { projects } from '../data';
-import { link } from '../assets';
 import { SectionWrapper } from '../hoc';
 
 const ProjectCard = ({
@@ -18,71 +17,67 @@ const ProjectCard = ({
   contribution_rate,
 }) => {
   return (
-    <motion.div
+    <motion.a
+      href={website_link}
+      target='_blank'
       initial='hidden'
       animate='show'
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      className='cursor-pointer'
     >
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-dark-grey relative p-5 rounded-2xl sm:w-[360px] w-full'
+      <div
+        initial='hidden'
+        animate='show'
+        variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
       >
-        <div className='absolute z-10 inset-0 flex justify-end m-3 card-img_hover'>
-          <a
-            href={website_link}
-            className='bg-white size-8 rounded-full flex justify-center items-center cursor-pointer'
-          >
+        <Tilt
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className='bg-dark-grey relative p-5 rounded-2xl sm:w-[360px] w-full'
+        >
+          <div className='relative w-full aspect-video rounded-2xl'>
             <img
-              src={link}
-              alt='website link'
-              className='w-1/2 h-1/2 object-contain'
+              src={image}
+              alt={name}
+              className='w-full h-full object-contain'
             />
-          </a>
-        </div>
-
-        <div className='relative w-full aspect-video rounded-2xl'>
-          <img
-            src={image}
-            alt={name}
-            className='w-full h-full object-contain'
-          />
-        </div>
-
-        <div className='mt-3 space-y-2'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='text-light-grey text-[14px]'>{description}</p>
-          <div className='text-white pt-3 text-[14px] lg:text-[16px] font-bold flex flex-col'>
-            <p>기여도: {contribution_rate}%</p>
-            <p>담당한 부분:</p>
-            <ul className='mt-2 list-disc ml-5 space-y-2'>
-              {points.map((point, index) => (
-                <li
-                  key={`project-point-${index}`}
-                  className='text-white text-[14px] lg:text-[16px] font-semibold'
-                >
-                  {point}
-                </li>
-              ))}
-            </ul>
           </div>
-        </div>
 
-        <div className='mt-5 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className='border-2 text-white px-3 py-1 rounded-2xl text-[12px]'
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
+          <div className='mt-3 space-y-2'>
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            <p className='text-light-grey text-[14px]'>{description}</p>
+            <div className='text-white pt-3 text-[14px] lg:text-[16px] font-bold flex flex-col'>
+              <p>기여도: {contribution_rate}%</p>
+              <p>담당한 부분:</p>
+              <ul className='mt-2 list-disc ml-5 space-y-2'>
+                {points.map((point, index) => (
+                  <li
+                    key={`project-point-${index}`}
+                    className='text-white text-[14px] lg:text-[16px] font-semibold'
+                  >
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className='mt-5 flex flex-wrap gap-2'>
+            {tags.map((tag) => (
+              <span
+                key={tag}
+                className='border-2 text-white px-3 py-1 rounded-2xl text-[12px]'
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </Tilt>
+      </div>
+    </motion.a>
   );
 };
 
