@@ -24,6 +24,7 @@ import {
   brave,
   bravewebsite,
   mail,
+  todolist,
 } from '../assets';
 
 const socialLinks = [
@@ -204,6 +205,22 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: 'Todo List',
+    description:
+      'React와 Redux를 사용하여 만든 Todo List 애플리케이션입니다. 사용자는 할 일을 추가하고, 수정하고, 삭제할 수 있습니다.',
+    contribution_rate: '100',
+    tags: ['React', 'Redux', 'Local Storage', 'Tailwind'],
+    points: [
+      'Redux Toolkit을 사용하여 상태 관리를 했습니다.',
+      'Local Storage를 활용하여 사용자의 Todo List를 저장하고 불러오는 기능을 구현했습니다.',
+      '커스텀 훅을 사용하여 다크 모드를 전환할 수 있습니다. (LocalStorage에 상태 저장)',
+      'Modal 컴포넌트를 만들어 사용자가 할 일을 추가할 수 있도록 구현했습니다.',
+      '검색 기능을 추가하여 사용자가 할 일을 검색할 수 있도록 구현했습니다.',
+    ],
+    image: todolist,
+    website_link: 'https://todo-list-crystal-yeo.vercel.app/',
+  },
   {
     name: 'TAB',
     description:

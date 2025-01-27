@@ -34,6 +34,7 @@ import salus from './project/salus.png';
 import mountainjade from './project/mountain-jade.png';
 import npo from './project/npo.png';
 import bravewebsite from './project/bravewebsite.png';
+import todolist from './project/todo-list.png';
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   link,
   yoobee,
   mail,
+  todolist,
 };
