@@ -7,7 +7,7 @@ import { staggerContainer, revealText } from '../utils/animation';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen lg:h-screen mx-auto'>
+    <section className='relative w-full h-screen mx-auto'>
       <BeamLight />
       <div
         className={`${styles.paddingX} absolute inset-0 top-1/2 -translate-y-1/2 max-w-7xl mx-auto flex flex-row items-start gap-5`}
@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='absolute bottom-6 w-full flex justify-center items-center'>
+      <div className='absolute bottom-[5%] w-full flex justify-center items-center'>
         <a href='#skill'>
           <div className='w-[30px] h-[50px] md:w-[35px] md:h-[64px] rounded-3xl border-2 md:border-4 border-white flex justify-center items-start p-2'>
             <motion.div

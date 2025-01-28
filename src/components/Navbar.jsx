@@ -54,7 +54,7 @@ const Navbar = () => {
             initial={{ y: '-100%' }}
             animate={{ y: toggle ? 0 : '-100%' }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className={`flex p-6 h-screen w-full z-40 bg-primary absolute top-0 right-0`}
+            className={`flex p-6 h-screen w-full z-40 bg-black absolute top-0 right-0`}
           >
             <ul className='list-none flex sm:hidden pt-[200px] items-center w-full flex-col gap-6'>
               {navLinks.map((link) => (
