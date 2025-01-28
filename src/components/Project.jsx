@@ -47,7 +47,9 @@ const ProjectCard = ({
           </div>
 
           <div className='mt-3 space-y-2'>
-            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            <h3 className='text-white font-bold text-[24px] uppercase'>
+              {name}
+            </h3>
             <p className='text-light-grey text-[14px]'>{description}</p>
             <div className='text-white pt-3 text-[14px] lg:text-[16px] font-bold flex flex-col'>
               <p>기여도: {contribution_rate}%</p>
