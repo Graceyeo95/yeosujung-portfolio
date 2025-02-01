@@ -5,6 +5,7 @@ import menu from './icons/menu.svg';
 import close from './icons/close.svg';
 import mail from './icons/mail.png';
 import link from './icons/link.png';
+import tistory from './icons/tistory.png';
 
 //skill
 import css from './skill/css.png';
@@ -69,4 +70,5 @@ export {
   mail,
   todolist,
   newsapp,
+  tistory,
 };
