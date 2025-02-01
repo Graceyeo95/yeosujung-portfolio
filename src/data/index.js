@@ -218,7 +218,7 @@ const projects = [
     description:
       'Material UI로 반응형 UI를 구현했으며, REST API와 Axios를 사용해 뉴스 데이터를 불러옵니다. 또한 사용자가 뉴스를 검색하고, 카테고리 별로 뉴스를 볼 수 있습니다.',
     contribution_rate: '100',
-    tags: ['React', 'Rest API', 'Axios', 'MUI'],
+    tags: ['React', 'Vite', 'Rest API', 'Axios', 'MUI'],
     points: [
       'RapidAPI의 REST API와 Axios를 사용하여 뉴스를 불러오는 기능을 구현했습니다.',
       'Material UI를 사용해 반응형 UI를 구현했습니다.',
