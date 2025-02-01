@@ -25,6 +25,7 @@ import {
   bravewebsite,
   mail,
   todolist,
+  newsapp,
 } from '../assets';
 
 const socialLinks = [
@@ -206,11 +207,27 @@ const experiences = [
 
 const projects = [
   {
+    name: 'News App',
+    description:
+      'Material UI로 반응형 UI를 구현했으며, REST API와 Axios를 사용해 뉴스 데이터를 불러옵니다. 또한 사용자가 뉴스를 검색하고, 카테고리 별로 뉴스를 볼 수 있습니다.',
+    contribution_rate: '100',
+    tags: ['React', 'Rest API', 'Axios', 'MUI'],
+    points: [
+      'RapidAPI의 REST API와 Axios를 사용하여 뉴스를 불러오는 기능을 구현했습니다.',
+      'Material UI를 사용해 반응형 UI를 구현했습니다.',
+      '뉴스 카테고리를 선택하여 필터링할 수 있는 기능을 구현했습니다.',
+      '사용자가 원하는 뉴스를 검색할 수 있는 기능을 추가했습니다.',
+      'MUI의 CircularProgress를 사용하여 데이터 로딩 중 스피너를 구현했습니다.',
+    ],
+    image: newsapp,
+    website_link: 'https://crystal-news-api.app/',
+  },
+  {
     name: 'Todo List',
     description:
       'React와 Redux를 사용하여 만든 Todo List 애플리케이션입니다. 사용자는 할 일을 추가하고, 수정하고, 삭제할 수 있습니다.',
     contribution_rate: '100',
-    tags: ['React', 'Redux', 'Local Storage', 'Tailwind'],
+    tags: ['React', 'Redux', 'Vite', 'Local Storage', 'Tailwind'],
     points: [
       'Redux Toolkit을 사용하여 상태 관리를 했습니다.',
       'Local Storage를 활용하여 사용자의 Todo List를 저장하고 불러오는 기능을 구현했습니다.',

@@ -35,6 +35,7 @@ import mountainjade from './project/mountain-jade.png';
 import npo from './project/npo.png';
 import bravewebsite from './project/bravewebsite.png';
 import todolist from './project/todo-list.png';
+import newsapp from './project/news-api.png';
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   yoobee,
   mail,
   todolist,
+  newsapp,
 };
