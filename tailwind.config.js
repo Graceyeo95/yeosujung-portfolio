@@ -16,6 +16,7 @@ export default {
         md: '768px', // Tablet
         lg: '1024px', // Desktop
         xl: '1280px', // Large Desktop
+        '2xl': '1512px', // Extra Large Desktop
       },
       boxShadow: {
         card: '0px 10px 100px -30px #0F45DB',
