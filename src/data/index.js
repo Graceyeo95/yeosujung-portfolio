@@ -227,7 +227,7 @@ const projects = [
       'MUI의 CircularProgress를 사용하여 데이터 로딩 중 스피너를 구현했습니다.',
     ],
     image: newsapp,
-    website_link: 'https://crystal-news-api.app/',
+    website_link: 'https://crystal-news-api.vercel.app/',
   },
   {
     name: 'Todo List',
