@@ -53,7 +53,7 @@ const Hero = () => {
                 <img
                   src={link.icon}
                   alt={link.title}
-                  className='size-6 lg:size-8'
+                  className='size-6 2xl:size-8'
                 />
               </a>
             ))}
