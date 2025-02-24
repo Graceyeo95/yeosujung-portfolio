@@ -12,7 +12,7 @@ const SkillCard = ({ name, icon, points, index }) => {
       <motion.div
         initial='hidden'
         animate='show'
-        variants={fadeIn('right', 'linear', index * 0.5, 0.75)}
+        variants={fadeIn('right', 'linear', index * 0.45, 0.75)}
         className='w-full p-[1px] rounded-[16px] lg:rounded-[20px] overflow-hidden shadow-card'
       >
         <div
