@@ -24,7 +24,7 @@ const ProjectCard = ({
       animate='show'
       variants={fadeIn('up', 'linear', index * 0.5, 1.3)}
     >
-      <div className='relative bg-dark-grey px-5 text-white pb-5 pt-12 rounded-2xl sm:w-[360px] w-full overflow-hidden'>
+      <div className='relative bg-dark-grey px-5 text-white pb-5 pt-12 rounded-2xl mx-auto w-full md:w-[80%] lg:w-[360px] overflow-hidden'>
         <span className='absolute top-0 left-0 bg-light-grey w-full text-center text-black font-semibold uppercase py-2'>
           {isSideProject ? 'Side Project' : 'Company Project'}
         </span>
@@ -112,7 +112,7 @@ const Project = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 flex flex-wrap gap-7 justify-center'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
