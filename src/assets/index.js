@@ -37,6 +37,7 @@ import npo from './project/npo.png';
 import bravewebsite from './project/bravewebsite.png';
 import todolist from './project/todo-list.png';
 import newsapp from './project/news-api.png';
+import booksapp from './project/books-quotes-app.png';
 
 export {
   logo,
@@ -71,4 +72,5 @@ export {
   todolist,
   newsapp,
   tistory,
+  booksapp,
 };

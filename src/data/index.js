@@ -27,6 +27,7 @@ import {
   todolist,
   newsapp,
   tistory,
+  booksapp,
 } from '../assets';
 
 const socialLinks = [
@@ -213,24 +214,42 @@ const experiences = [
 
 const projects = [
   {
-    name: 'News App',
-
+    name: 'Books & Quotes',
+    isSideProject: true,
     description:
-      'Material UI로 반응형 UI를 구현했으며, REST API와 Axios를 사용해 뉴스 데이터를 불러옵니다. 또한 사용자가 뉴스를 검색하고, 카테고리 별로 뉴스를 볼 수 있습니다.',
+      '책과 명언을 좋아하는 사람들을 위한 서비스입니다. 사용자는 다양한 책과 명언을 검색하고, 카테고리별로 탐색할 수 있습니다. 또한 관심 있는 책과 명언을 즐겨찾기 기능을 통해 저장하고, 나만의 리스트를 만들어 볼 수 있습니다.',
+    contribution_rate: '100',
+    tags: ['React', 'Vite', 'Rest API', 'Axios', 'React Query', 'Zustand'],
+    points: [
+      'REST API와 Axios를 사용하여 책과 명언 데이터를 불러옵니다.',
+      '사용자가 원하는 책과 명언을 검색할 수 있습니다',
+      '카테고리별로 책과 명언을 필터링하여 탐색할 수 있습니다.',
+      '관심 있는 책과 명언을 즐겨찾기에 저장하여 관리할 수 있습니다.',
+    ],
+    image: booksapp,
+    github_link: 'https://github.com/Graceyeo95/crystal-books',
+    website_link: 'https://crystal-books.vercel.app/',
+  },
+  {
+    name: 'News App',
+    isSideProject: true,
+    description:
+      '다양한 뉴스를 한 곳에서 볼 수 있는 뉴스 애플리케이션입니다. 사용자는 뉴스 카테고리를 선택하고, 원하는 뉴스를 검색할 수 있습니다.',
     contribution_rate: '100',
     tags: ['React', 'Vite', 'Rest API', 'Axios', 'MUI'],
     points: [
       'RapidAPI의 REST API와 Axios를 사용하여 뉴스를 불러오는 기능을 구현했습니다.',
       'Material UI를 사용해 반응형 UI를 구현했습니다.',
-      '뉴스 카테고리를 선택하여 필터링할 수 있는 기능을 구현했습니다.',
+      '뉴스 카테고리를 선택하여 탐색할 수 있습니다.',
       '사용자가 원하는 뉴스를 검색할 수 있는 기능을 추가했습니다.',
-      'MUI의 CircularProgress를 사용하여 데이터 로딩 중 스피너를 구현했습니다.',
     ],
     image: newsapp,
+    github_link: 'https://github.com/Graceyeo95/news-api',
     website_link: 'https://crystal-news-api.vercel.app/',
   },
   {
     name: 'Todo List',
+    isSideProject: true,
     description:
       'React와 Redux를 사용하여 만든 Todo List 애플리케이션입니다. 사용자는 할 일을 추가하고, 수정하고, 삭제할 수 있습니다.',
     contribution_rate: '100',
@@ -240,13 +259,14 @@ const projects = [
       'Local Storage를 활용하여 사용자의 Todo List를 저장하고 불러오는 기능을 구현했습니다.',
       '커스텀 훅을 사용하여 다크 모드를 전환할 수 있습니다. (LocalStorage에 상태 저장)',
       'Modal 컴포넌트를 만들어 사용자가 할 일을 추가할 수 있도록 구현했습니다.',
-      '검색 기능을 추가하여 사용자가 할 일을 검색할 수 있도록 구현했습니다.',
     ],
     image: todolist,
+    github_link: 'https://github.com/Graceyeo95/todo-list-app',
     website_link: 'https://todo-list-crystal-yeo.vercel.app/',
   },
   {
     name: 'TAB',
+    isSideProject: false,
     description:
       'TAB NZ는 뉴질랜드 스포츠 산업의 지속 가능한 성장을 지원하기 위해 개발된 사이트로, 사용자에게 보조금 신청, 스폰서십 정보, 파트너십 기회 등을 제공합니다.',
     contribution_rate: '80',
@@ -261,8 +281,6 @@ const projects = [
     ],
     points: [
       'Mapbox GL 라이브러리를 통해 Head office 위치를 시각화한 인터랙티브 지도 구현 했습니다.',
-      'React CountUp 라이브러리를 통해 통계 데이터를 역동적인 애니메이션으로 표시 했습니다.',
-      'React Fast Marquee: 사용자 몰입감을 높이는 텍스트 슬라이더 효과 적용 했습니다.',
       'Storybook: UI 컴포넌트를 체계적으로 개발 및 관리 했습니다.',
       'News 카테고리 필터 기능: Sanity CMS에서 제공된 카테고리 데이터를 기반으로 동적으로 필터 기능 구현 했습니다.',
       'SSG(Static Site Generation)를 활용하여 웹사이트 속도를 최적화했습니다.',
@@ -272,6 +290,7 @@ const projects = [
   },
   {
     name: 'BOBBY FOUNDATION',
+    isSideProject: false,
     description:
       'Bobby Foundation 웹사이트는 TAB NZ에서 제공하는 스포츠 지원 프로그램에 대한 자세한 정보를 제공하며, 보조금을 신청할 수 있는 링크를 제공합니다.',
     contribution_rate: '80',
@@ -294,28 +313,8 @@ const projects = [
     website_link: 'https://www.bobby.org.nz/',
   },
   {
-    name: 'BRAVE WEBSITE',
-    description:
-      'Brave Agency의 리브랜딩 과정에서 새롭게 만들어진 웹사이트에 기여했습니다.',
-    contribution_rate: '20',
-    tags: [
-      'Nextjs',
-      'Typescript',
-      'Tailwind',
-      'Sanity CMS',
-      'Vercel',
-      'TurboRepo',
-      'Storybook',
-    ],
-    points: [
-      'Approach 페이지에서 Embla 라이브러리를 활용해 testimonial 캐러셀를 구현했습니다.',
-      'UAT (user acceptance test) 과정에서 발생한 문제를 해결하며, 사이트 품질을 높이는 데 중요한 역할을 했습니다.',
-    ],
-    image: bravewebsite,
-    website_link: 'https://www.wearebrave.nz/',
-  },
-  {
     name: 'SALUS AVIATION',
+    isSideProject: false,
     description:
       'Salus Aviation 웹사이트는 헬리콥터 부품 및 헬리콥터 판매 서비스를 제공합니다. 사용자는 다양한 헬리콥터 부품을 찾아볼 수 있으며, 구매에 필요한 정보를 쉽게 얻을 수 있습니다.',
     contribution_rate: '20',
@@ -338,10 +337,33 @@ const projects = [
     website_link: 'https://www.salusaviation.com/',
   },
   {
+    name: 'BRAVE WEBSITE',
+    isSideProject: false,
+    description:
+      'Brave Agency의 리브랜딩 과정에서 새롭게 만들어진 웹사이트에 기여했습니다.',
+    contribution_rate: '20',
+    tags: [
+      'Nextjs',
+      'Typescript',
+      'Tailwind',
+      'Sanity CMS',
+      'Vercel',
+      'TurboRepo',
+      'Storybook',
+    ],
+    points: [
+      'Approach 페이지에서 Embla 라이브러리를 활용해 testimonial 캐러셀를 구현했습니다.',
+      'UAT (user acceptance test) 과정에서 발생한 문제를 해결하며, 사이트 품질을 높이는 데 중요한 역할을 했습니다.',
+    ],
+    image: bravewebsite,
+    website_link: 'https://www.wearebrave.nz/',
+  },
+  {
     name: 'Mountain Jade',
+    isSideProject: false,
     description:
       'Mountain Jade 웹사이트는 뉴질랜드 전통 보석인 Pounamu(녹색 옥)와 다양한 주얼리를 판매하는 이커머스 플랫폼입니다. 사용자들에게 제품의 특성에 대한 자세한 정보를 제공합니다.',
-    contribution_rate: '5',
+    contribution_rate: '10',
     tags: [
       'Nextjs',
       'Typescript',
@@ -362,12 +384,14 @@ const projects = [
   },
   {
     name: 'Ngati Porou (NPO)',
+    isSideProject: false,
     description:
       'NPO는 마오리 사람들을 위한 의료 서비스, 취업 지원, 주택 제공 등 필수적인 서비스를 알리는 웹사이트입니다.',
     contribution_rate: '60',
     points: [
       'Custom 코드와 라이브러리를 통해 Webflow에서 제공하지 않는 기능을 구현했습니다 - Carousel, Pagination, Filter',
-      'Webflow CMS',
+      'Webflow CMS를 사용하여 동적 콘텐츠를 관리하고, 필요한 데이터를 불러오는 기능을 구현했습니다.',
+      'Mapbox API를 활용하여 지도를 구현했습니다.',
     ],
     tags: ['Webflow', 'Finsweet', 'Swiper', 'Mapbox'],
     image: npo,
