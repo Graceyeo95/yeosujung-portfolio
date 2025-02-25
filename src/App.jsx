@@ -2,9 +2,9 @@ import { BrowserRouter } from 'react-router-dom';
 import {
   Navbar,
   Hero,
-  Skill,
+  Skills,
   Experience,
-  Project,
+  Projects,
   Contact,
 } from './components';
 
@@ -14,9 +14,9 @@ function App() {
       <div className='relative z-0 bg-black overflow-x-hidden'>
         <Navbar />
         <Hero />
-        <Skill />
+        <Skills />
         <Experience />
-        <Project />
+        <Projects />
         <Contact />
       </div>
     </BrowserRouter>

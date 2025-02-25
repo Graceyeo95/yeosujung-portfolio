@@ -50,12 +50,12 @@ const socialLinks = [
 
 export const navLinks = [
   {
-    id: 'skill',
-    title: 'Skill',
+    id: 'skills',
+    title: 'Skills',
   },
   {
-    id: 'project',
-    title: 'Project',
+    id: 'projects',
+    title: 'Projects',
   },
   {
     id: 'contact',
