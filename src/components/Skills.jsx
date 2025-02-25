@@ -52,7 +52,7 @@ const SkillCard = ({ name, icon, points, index }) => {
   );
 };
 
-const Skill = () => {
+const Skills = () => {
   return (
     <>
       <motion.div initial='hidden' animate='show' variants={textVariant()}>
@@ -69,7 +69,7 @@ const Skill = () => {
         다향한 기술들을 써본 경험이 있습니다.
       </motion.p>
 
-      <div className='mt-20 grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-3 md:gap-4 lg:gap-8'>
+      <div className='mt-12 lg:mt-20 grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-3 md:gap-4 lg:gap-8'>
         {technologies.map((technology, index) => (
           <div
             key={technology.name}
@@ -83,4 +83,4 @@ const Skill = () => {
   );
 };
 
-export default SectionWrapper(Skill, 'skill');
+export default SectionWrapper(Skills, 'skills');
