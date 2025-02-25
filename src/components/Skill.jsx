@@ -69,11 +69,11 @@ const Skill = () => {
         다향한 기술들을 써본 경험이 있습니다.
       </motion.p>
 
-      <div className='mt-20 grid grid-cols-12 gap-2 md:gap-8'>
+      <div className='mt-20 grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-2 md:gap-4 lg:gap-8'>
         {technologies.map((technology, index) => (
           <div
             key={technology.name}
-            className='col-span-6 lg:col-span-4 xl:col-span-3'
+            className='col-span-6 sm:col-span-3 md:col-span-4 xl:col-span-3'
           >
             <SkillCard index={index} {...technology} />
           </div>
