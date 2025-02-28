@@ -329,9 +329,9 @@ const projects = [
     ],
     points: [
       '스토리북을 활용하여 base & module UI 컴포넌트를 개발했습니다',
-      'Footer, Sticky Nav, Image text 등 컴포넌트를 만들었습니다 .',
-      'Sanity CMS를 사용하여 sold/Leased tag 추가 기능을 구현했습니다.',
-      'Grid Layout을 사용하여 팀 페이지를 구현했습니다.',
+      'Carousel, ImageText, Banner 등 재사용 가능한 컴포넌트를 구현했습니다.',
+      'Sanity (Headless CMS)를 활용한 데이터 연동',
+      'Lighthouse를 활용하여 웹 성능과 접근성 최적화',
     ],
     image: salus,
     website_link: 'https://www.salusaviation.com/',
